@@ -1,0 +1,60 @@
+.world-clients {
+    padding: 100px 0;
+    background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+    &__balls {
+        position: relative;
+    }
+}
+
+.balls {
+    margin: 0 auto;
+}
+
+.feedback {
+    position: absolute;
+    top: 50%;
+    left:55%;
+    display: flex;
+    background-color: $colorFeedBack;
+    border-radius: 15px;
+    padding: 20px;
+
+    &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 15px 30px 15px 0;
+        border-color: transparent $colorFeedBack transparent transparent;
+        position: absolute;
+        left:-30px;
+        top:40px;
+    }
+
+    &__user-comment {
+        &--wrapper {
+            margin-right: 50px;
+        }
+    }
+
+    &__user-name {
+        @include fontStyle($fontPopins,$fontNormal,14);
+        color: $colorBlackText;
+        margin-bottom: 5px;
+    }
+
+    &__stars {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        @include fontStyle($fontPopins, $fontBold, 12);
+        margin-bottom: 5px;
+    }
+    &__comment {
+        @include fontStyle($fontPopins, $fontNormal, 12);
+    }
+
+}

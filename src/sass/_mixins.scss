@@ -1,0 +1,45 @@
+
+// @mixin fontStyle($fontFam, $fontWh, $size) {
+//     font-family: $fontFam;
+//     font-size: calc($size / 16)rem;
+//     font-weight: $fontWh;
+// }
+
+%textUp {
+    text-transform: uppercase;
+}
+%textCenter {
+    text-align: center;
+}
+
+%flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin lineHeigh($lineH) {
+    line-height: calc($lineH / 16) + rem;
+}
+
+@mixin textUpCenter($textUp,$textCenter) {
+    text-transform: $textUp;
+    text-align: $textCenter;
+}
+
+@mixin flex($justCont, $align, $direct) {
+    display: flex;
+    justify-content: $justCont;
+    flex-direction: $direct;
+    align-items: $align;
+}
+
+@mixin fontSize($count) {
+	font-size: calc($count / 16) + rem;
+}
+
+@mixin fontStyle($fontFamily, $fontWeight, $size) {
+	font-family: $fontFamily;
+	@include fontSize($size);
+	font-weight: $fontWeight;
+}

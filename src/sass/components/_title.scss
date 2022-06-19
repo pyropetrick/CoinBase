@@ -1,0 +1,7 @@
+.title {
+    @include fontStyle($fontPopins,$fontBold, 28);
+    @extend %textCenter;
+    color: $colorWhite;
+    padding: 0 370px;
+    @include lineHeigh(42);
+}

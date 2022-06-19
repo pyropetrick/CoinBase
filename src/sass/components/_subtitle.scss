@@ -1,0 +1,8 @@
+.subtitle {
+    @include fontStyle($fontPopins,$fontNormal, 16);
+    @include lineHeigh(40);
+    color: $colorWhite;
+    @extend %textCenter;
+    margin-bottom: 30px;
+    padding: 0 310px;
+}
