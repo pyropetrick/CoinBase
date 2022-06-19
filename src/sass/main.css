@@ -157,6 +157,10 @@ body {
   gap: 5px;
   margin-bottom: 10px;
 }
+.feedback__star {
+  max-width: 15px;
+  max-height: 15px;
+}
 .feedback__title {
   font-family: "Poppins", sans-serif;
   font-size: 0.75rem;
