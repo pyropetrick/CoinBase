@@ -3,6 +3,8 @@
     background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
     &__balls {
         margin: 0 auto;
+        max-width: 1100px;
+        max-height: 400px;
         &--wrapper {
             position: relative;
         }
@@ -55,5 +57,10 @@
     &__comment {
         @include fontStyle($fontPopins, $fontNormal, 12);
     }
-
+    &__icon {
+        &-bitcoin {
+            max-width: 25px;
+            max-height: 25px;
+        }
+    }
 }
